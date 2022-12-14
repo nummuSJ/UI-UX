@@ -1,0 +1,64 @@
+@charset "UTF-8";
+*{
+    margin:0px;
+    padding:0px;
+}
+ul , ol{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+/* reset css */
+section{
+    width: 100%;
+    background: lightgreen;
+    display: flex;
+}
+section article{
+    background: green;
+    font-size: 40px;
+    color:#fff;
+    border: 1px solid #000;
+}
+section article:nth-of-type(1){
+    flex: 1;
+}
+section article:nth-of-type(2){
+    flex: 2;
+}
+section article:nth-of-type(3){
+    flex: 3;
+}
+/* 
+font : font-weight font-size/line-height font-family 
+
+background : background-color background-image background-repeat background-position/background-size
+
+text-align: 블록요소 안에 있는 인라인 요소를 중간으로 배치
+margin:0px auto 블록요소 자체를 가운데로 배치
+
+한페이지에 구글 웹폰트 최대 3개까지
+
+float를 쓰는경우 부모요소에
+.wrap::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+붙여줘야 자식요소의 크기를 감지함
+
+transform: rotateX 등등 3D 이동 하려면 부모 태그에 
+perspective: ~px 설정
+
+!!강추!!
+svg이미지를  stroke-dasharray, stroke-dashoffset
+를 이용한 선그리기 모션 그래픽
+
+flex-flow : <flex-direction> <flex-wrap>
+justify-content : flex-direction의 방향 즉, 중심축 대로 배치를 결정하는 방법
+
+flex 중심축 배치 justify-content
+flex 반대축 배치 (wrap일때 align-content)
+(no wrap일때 align-items)
+*/

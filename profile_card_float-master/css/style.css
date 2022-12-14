@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Orbitron&display=swap');
+
+/* reset CSS */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+li, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    width: 340px;
+    padding: 30px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,.1);
+}
+.wrap .menu a{
+    font-size: 20px;
+    color:#666;
+}
+.wrap .menu a:nth-of-type(1){
+    float: left;
+}
+.wrap .menu a:nth-of-type(2){
+    float: right;
+}
+.wrap .menu:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.wrap .profile{
+    width: 100%;
+    text-align: center;
+}
+.wrap .profile img{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.wrap .profile h1{
+    font: bold 22px/1 "arial";
+    color: #555;
+    margin-bottom: 5px;
+}
+.wrap .profile p{
+    font: 12px/1 "arial";
+    color : #bbb;
+    margin-bottom:30px;
+}
+.wrap .profile .btnview{
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0px auto 20px;
+    font: bold 12px/32px "arial";
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.644);
+    color:#fff;
+    border-radius: 16px;
+}
+
+.wrap .contact {
+    margin-bottom: 25px;
+}
+.wrap .contact li{
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.wrap .contact li:last-child{
+    border-bottom: none;
+}
+.wrap .contact li i {
+    width: 20%;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #ddd;
+}
+.wrap .contact li span{
+    font: 11px/1 "orbitron";
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.wrap .others {
+    text-align: center;
+    font-size:0px;
+    margin-bottom: 20px;
+}
+.wrap .others a{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 10px;
+    opacity: .4;
+}
+.wrap .others a:nth-of-type(1){
+    background: aqua;
+    box-shadow: 3px 3px 7px rgba(0, 255, 255, 0.3);
+}
+.wrap .others a:nth-of-type(2){
+    background: #45eaa5;
+    box-shadow: 3px 3px 7px rgba(69, 234, 165, 0.5);
+}
+.wrap .others a:nth-of-type(3){
+    background: hotpink;
+    box-shadow: 3px 3px 7px rgba(255, 105, 180, 0.377);
+}
+.wrap .others a:nth-of-type(4){
+    background: #780a6f;
+    box-shadow: 3px 3px 7px rgba(120, 10, 111, 0.3);
+}
+.wrap .others a.on{
+   opacity: 1; 
+}
+
+/* member1 custom */
+body.member1{
+    background: lightcyan;
+}
+body.member1 .wrap .profile img{
+    box-shadow: 5px 15px 10px rgba(75, 145, 195, 0.2);
+}
+body.member1 .wrap .profile .btnview{
+    background: linear-gradient(225deg, rgb(71, 135, 213), rgb(148, 218, 246));
+    box-shadow: 5px 5px 15px rgba(56, 116, 188, 0.3);
+}
+/*  member2 custom */
+body.member2{
+    background: rgb(225, 255, 224);
+}
+body.member2 .wrap .profile img{
+    box-shadow: 5px 15px 10px rgba(75, 195, 99, 0.2);
+}
+body.member2 .wrap .profile .btnview{
+    background: linear-gradient(225deg, rgb(71, 213, 99), rgb(148, 246, 153));
+    box-shadow: 5px 5px 15px rgba(56, 188, 71, 0.3);
+}
+/* member3 custom */
+body.member3{
+    background: rgb(252, 238, 251);
+}
+body.member3 .wrap .profile img{
+    box-shadow: 5px 15px 10px rgba(195, 75, 195, 0.2);
+}
+body.member3 .wrap .profile .btnview{
+    background: linear-gradient(225deg, rgb(213, 71, 173), rgb(246, 148, 215));
+    box-shadow: 5px 5px 15px rgba(188, 56, 177, 0.3);
+}
+/* member4 custom */
+body.member4{
+    background: rgb(246, 224, 255);
+}
+body.member4 .wrap .profile img{
+    box-shadow: 5px 15px 10px rgba(169, 75, 195, 0.2);
+}
+body.member4 .wrap .profile .btnview{
+    background: linear-gradient(225deg, rgb(194, 71, 213), rgb(246, 148, 244));
+    box-shadow: 5px 5px 15px rgba(157, 56, 188, 0.3);
+}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Rubik+Vinyl&display=swap');
+
+figure{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+figure video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+section .wrap_1{
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 9vh 0 9vh 8vw;
+    align-items: flex-start;
+}
+section .wrap_1 .banner:hover svg path{
+    stroke-dashoffset: 0;
+}
+section .wrap_1 .banner h1{
+    font: bold 36px/1 "B612 Mono";
+    color: #222;
+    display: inline-block;
+    margin-right: 5px;
+    letter-spacing: 2px;
+}
+section .wrap_1 .banner svg{
+    display: inline-block;
+    width: 30px;
+    overflow: visible;
+}
+section .wrap_1 .banner svg path{
+    fill: transparent;
+    stroke: #222;
+    stroke-width: 20px;
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    transition: stroke-dashoffset .5s ease 0s;
+}
+section .wrap_1 .gnb li{
+    display: flex;
+    margin: 5vh 0;
+    height: 30px;
+    transition: padding-left .3s ease 0s;
+}
+section .wrap_1 .gnb li a{
+    font:normal 24px/1 "B612 Mono";
+    color: #555;
+    transition: color .3s ease 0s;
+}
+section .wrap_1 .gnb li:hover{
+    padding-left:15px;
+}
+section .wrap_1 .gnb li:hover a{
+    color: #222;
+}
+section .wrap_1 .sns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+    width: 130px;
+}
+section .wrap_1 .sns li a{
+    font-size:20px;
+    color: #222;
+}
+
+section .wrap_2{
+    display: flex;
+    flex: 5;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 9vh 8vw 9vh 0;
+    align-items: flex-end;
+}
+section .wrap_2 .view_more_btn{
+    display: none;  
+}
+section .wrap_2 div{
+    position: relative;
+    width: 100%;
+    text-align: end;
+    bottom: 30px;
+}
+section .wrap_2 div p{
+    font:bold 64px/1.5 "Rubik Vinyl";
+    letter-spacing: 6px;
+    color: #000;
+}
+section .wrap_2 div ul{
+    position: absolute;
+    right: 0px;
+}
+section .wrap_2 div ul li{
+    float: left;
+    margin-right: 10px;
+}
+section .wrap_2 div ul li:nth-of-type(1){
+    margin-right: 40px;
+}
+section .wrap_2 div ul li a{
+    color: #000;
+}
+section .wrap_2 div ul li a{
+    font: bold 20px/1 "Rubik Vinyl";
+}
+section .wrap_2 div ul li a i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+footer{
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+    z-index:2;
+    text-align: center;
+    padding-bottom: 6vh;
+}
+footer .copyright{
+    color: #fff;
+    font: normal 16px/1 "arial";
+    letter-spacing: 1px;
+}

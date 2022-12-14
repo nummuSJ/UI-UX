@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation: sky 20s linear 0s infinite;
+}
+section{
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-200px;
+    margin-left:-500px;
+}
+section .sky{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+section .sky .sun{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: -150px;
+    transform-origin: center 500px;
+    animation: sun 20s linear 0s infinite;
+}
+section .sky .cloud1{
+    position: absolute;
+    top: -30px;
+    left: 10%;
+    animation: flow 10s linear 0s infinite;
+}
+section .sky .cloud2{
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    animation: flow 20s linear 0s infinite;
+}
+section .town .circle{
+    position: absolute;
+    bottom: 104px;
+    left: 50%;
+    margin-left: -165px;
+    opacity: 0.7;
+    animation: rotation 20s linear 0s infinite;
+}
+section .town .night{
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+}
+section .town .day{
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    animation: day 20s linear 0s infinite;
+}
+section .people{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: day 20s linear 0s infinite;
+}
+section .people .man{
+    position: absolute;
+    left:0%;
+    bottom: 0px;
+    animation: flow 7s linear 0s infinite;
+}
+section .people .family{
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    animation: flow 20s linear 0s infinite;
+}
+div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10vh;
+}
+div p{
+    font: normal 40px/1 "Poiret One";
+    letter-spacing: 5px;
+    color: #000;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes sun{
+    0%{
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    25%{
+        transform: rotate(-30deg);
+        opacity: 1;
+    }
+    50%{
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+    75%{
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+@keyframes sky{
+    0%{
+        background: #b08fcc;
+    }
+    25%{
+        background: #b1e1e2;
+    }
+    50%{
+        background: #fcd2e2;
+    }
+    75%{
+        background: #636888;
+    }
+    100%{
+        background: #b08fcc;
+    }
+} 
+@keyframes day{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes flow{
+    0%{
+        left:0%;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        left:90%;
+        opacity: 0;
+    }
+}
